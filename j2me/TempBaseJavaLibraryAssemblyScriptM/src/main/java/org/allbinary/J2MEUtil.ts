@@ -1,0 +1,45 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// package org.allbinary
+
+@global export class J2MEUtil extends JObject {
+
+    jclassName(): string {
+        return "org.allbinary.J2MEUtil";
+    }
+    
+
+    jinit_J2MEUtil_0(): J2MEUtil {
+        super.jinit_JObject_0();
+        return this;
+    }
+    
+
+    static isJ2ME(): bool {
+        return false;
+    }
+    
+
+    static isJ2SE(): bool {
+        return false;
+    }
+    
+
+    static isHTML(): bool {
+        return false;
+    }
+}
+

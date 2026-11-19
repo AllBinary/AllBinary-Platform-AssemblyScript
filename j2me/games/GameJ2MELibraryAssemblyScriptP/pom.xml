@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMAssemblyScript</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMAssemblyScript</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryAssemblyScriptM</module>
+        <!--
+        <module>../../../../working_thirdpartyassemblyscript/security/BouncyCastleDESJavaLibraryAssemblyScriptM</module>
+        <module>../../../../working_thirdpartyassemblyscript/communication/XmlRpc/XmlRpcJavaLibraryAssemblyScriptM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryAssemblyScriptM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryAssemblyScriptM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryAssemblyScriptM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryAssemblyScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryAssemblyScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryAssemblyScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryAssemblyScriptM</module>
+
+        <module>../../DebugJavaLibraryAssemblyScriptM</module>             
+        <module>../../ResourceLibraryAssemblyScriptM</module>
+        <module>../../ResourceJ2MEJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../AndroidResourceLibraryAssemblyScriptM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/GameInputLibraryAssemblyScriptM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryAssemblyScriptM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryAssemblyScriptM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryAssemblyScriptM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryAssemblyScriptM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryAssemblyScriptM</module>   
+        <module>../../games/GameConfigurationJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/GameIntermissionLibraryAssemblyScriptM</module>
+
+        <module>../../GroupLibraryAssemblyScriptM</module>
+
+        <module>../../input/NoSensorJavaLibraryAssemblyScriptM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryAssemblyScriptM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryAssemblyScriptM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryAssemblyScriptM</module>
+        <!-- web language: no SWT <module>../../input/platform/pc/GameInputSwtJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryAssemblyScriptM</module>
+        <module>../../input/MotionGestureJavaLibraryAssemblyScriptM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/GameInputPersistanceLibraryAssemblyScriptM</module>
+        <module>../../games/GameInputNoPersistanceLibraryAssemblyScriptM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryAssemblyScriptM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryAssemblyScriptM</module>
+        <module>../../input/NoGyroSensorJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../input/JSEGyroSensorJavaLibraryAssemblyScriptM</module>-->
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../media/sound/BasicPlayerMIDP2JavaLibraryAssemblyScriptM</module>-->
+        <module>../../media/sound/NoPlayerJavaLibraryAssemblyScriptM</module>
+        <module>../../media/sound/SoundJ2MELibraryAssemblyScriptM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryAssemblyScriptM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryAssemblyScriptM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryAssemblyScriptM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryAssemblyScriptM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryAssemblyScriptM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryAssemblyScriptM</module>
+        <module>../../games/GameResourceJavaLibraryAssemblyScriptM</module>
+        <module>../../games/GameSoundsJavaLibraryAssemblyScriptM</module>
+
+        <module>../../input/TouchInputLibraryAssemblyScriptP</module>
+
+        <module>../../media/MediaDataAssemblyScriptM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryAssemblyScriptM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryAssemblyScriptM</module>
+
+        <module>../../FullScreenNoneJavaLibraryAssemblyScriptM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryAssemblyScriptM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryAssemblyScriptM</module>
+
+        <module>../../lib/TrigJ2MELibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryAssemblyScriptM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryAssemblyScriptM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryAssemblyScriptM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryAssemblyScriptM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryAssemblyScriptM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryAssemblyScriptM</module>
+
+        <module>../GameNotificationJavaLibraryAssemblyScriptM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryAssemblyScriptM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryAssemblyScriptM</module>
+        <!-- web language: no SWT <module>../SWTJavaLibraryAssemblyScriptM</module>-->
+        <module>../GameJ2MELibraryAssemblyScriptM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOAssemblyScriptM</module>
+        -->
+    
+    </modules>
+
+</project>
+

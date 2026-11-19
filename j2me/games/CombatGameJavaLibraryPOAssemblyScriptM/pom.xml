@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMAssemblyScript</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMAssemblyScript</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryAssemblyScriptM</module>
+
+        <module>../../../physics/MovementJavaLibraryAssemblyScriptM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryAssemblyScriptM</module>
+        <module>../../games/PickupGameJavaLibraryAssemblyScriptM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryAssemblyScriptM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryAssemblyScriptM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryAssemblyScriptM</module>
+        <module>../../games/licensing/PartnerHTMLJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryAssemblyScriptM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryAssemblyScriptM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryAssemblyScriptM</module>
+        <module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryAssemblyScriptM</module>
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryAssemblyScriptM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryAssemblyScriptM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryAssemblyScriptM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryAssemblyScriptM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryAssemblyScriptM</module>
+        <module>../../games/GameScoresRemoteAndLocalJavaLibraryAssemblyScriptM</module>
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryAssemblyScriptM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryAssemblyScriptM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryAssemblyScriptM</module>
+        <module>../../games/CollisionLibraryAssemblyScriptM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/PickupLayerJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/DamageGameJavaLibraryAssemblyScriptM</module>
+        <module>../../games/DropJavaLibraryAssemblyScriptM</module>
+        <module>../../games/WeaponLayerJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/CombatGameJavaLibraryAssemblyScriptM</module>
+        <module>../../games/LifeJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryAssemblyScriptM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryAssemblyScriptM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryAssemblyScriptM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryAssemblyScriptM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryAssemblyScriptM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackAssemblyScriptP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workassemblyscript/j2me/games/strategy/rts/RTSGameJavaLibraryAssemblyScriptP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryAssemblyScriptP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryAssemblyScriptM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryAssemblyScriptM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryAssemblyScriptM</module>
+
+        <module>../../input/TrackingEventJavaLibraryAssemblyScriptM</module>
+        <module>../../../game/behavior/BehaviorLibraryAssemblyScriptP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryAssemblyScriptP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryAssemblyScriptM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../../android/VirtualKeyboardJavaLibraryAssemblyScriptM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

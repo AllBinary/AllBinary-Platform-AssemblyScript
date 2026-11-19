@@ -1,0 +1,37 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// package org.allbinary.game.ag.ai.sequence
+// import org.allbinary.ai.ArtificialIntelligenceInterface
+// import org.allbinary.game.input.GameInput
+// import org.allbinary.layer.AllBinaryLayer
+
+@global export class NumberLayersSequenceAIFactory extends JObject {
+
+    jclassName(): string {
+        return "org.allbinary.game.ag.ai.sequence.NumberLayersSequenceAIFactory";
+    }
+
+    jinit_NumberLayersSequenceAIFactory_0(): NumberLayersSequenceAIFactory {
+        super.jinit_JObject_0();
+        return this;
+    }
+    
+
+    getInstance4(numberOfEnemiesLeft: i32, artificialIntelligenceInterface: StaticArray<ArtificialIntelligenceInterface | null> | null, ownerLayerInterface: AllBinaryLayer | null, gameInput: GameInput | null): ArtificialIntelligenceInterface | null {
+        return new NumberLayersSequenceAI().jinit_NumberLayersSequenceAI_4(numberOfEnemiesLeft, artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+    }
+}
+

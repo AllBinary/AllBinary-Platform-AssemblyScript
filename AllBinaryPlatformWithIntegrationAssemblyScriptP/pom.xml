@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryPlatformWithIntegrationPOMAssemblyScript</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryPlatformWithIntegrationPOMAssemblyScript</name>
+    <url>http://www.allbinary.com/</url>
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        -->
+        <module>../../AllBinary-Platform-Integration</module>
+        
+<!--        <module>../j2me/games/platform/j2se/AllBinaryOnJ2SEBasePlatformJavaLibraryAssemblyScriptM</module>-->
+        <module>../j2me/games/platform/j2se/AllBinaryOnJ2SEPlatformJavaLibraryAssemblyScriptM</module>
+        
+        <!--<module>../j2me/FullScreenJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../j2me/SWTToJ2MELibraryAssemblyScriptM</module>-->
+        
+        <module>../j2me/media/graphics/ImageCacheOpenGLESJavaLibraryAssemblyScriptM</module>
+        <module>../graphics/opengl/Min3dForNullJavaLibraryAssemblyScriptM</module>
+        <module>../graphics/opengl/OpenGLESFileConfigurationJavaLibraryAssemblyScriptM</module>
+        <module>../graphics/opengl/OpenGLESJavaLibraryAssemblyScriptM</module>
+        <module>../j2me/media/graphics/animation/vector/SVGToAllBinaryJavaLibraryAssemblyScriptM</module>
+        <!--<module>../j2me/media/graphics/animation/image/ImageSwtJ2SEJavaLibraryAssemblyScriptM</module>-->
+
+        <module>../j2me/media/graphics/layer/AllBinaryTiledLayerJavaLibraryAssemblyScriptM</module>        
+        <module>../j2me/media/graphics/geography/map/GeographicMapLibraryAssemblyScriptM</module>
+        <module>../j2me/media/graphics/geography/GeographicPathFindingLibraryAssemblyScriptM</module>
+        <module>../j2me/media/graphics/geography/map/RaceTrackGeographicMapLibraryAssemblyScriptM</module>
+        <module>../j2me/media/graphics/geography/map/BasicTopViewGeographicMapJavaLibraryAssemblyScriptM</module>
+        <module>../j2me/games/arcade/platformer/TopViewGameBehaviorJavaLibraryAssemblyScriptM</module>
+
+        <module>../j2me/games/GameJ2MEOptionalLibraryPOAssemblyScriptM</module>
+
+        <module>../j2me/media/graphics/geography/map/GraphAssemblyScriptP</module>
+        <module>../j2me/games/strategy/rts/RTSGameJavaLibraryAssemblyScriptP</module>
+        
+        <!--<module>../j2me/android/AllBinaryPlatformAndroidLibraryPOAssemblyScriptM</module>-->
+
+    </modules>
+
+    <dependencies>
+        
+    </dependencies>
+
+</project>
+

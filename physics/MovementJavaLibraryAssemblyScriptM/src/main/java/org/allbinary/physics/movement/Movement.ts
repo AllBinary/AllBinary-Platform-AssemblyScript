@@ -1,0 +1,44 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// package org.allbinary.physics.movement
+// import org.allbinary.game.layer.AllBinaryGameLayer
+// import org.allbinary.logic.math.BasicDecimal
+
+@global export class Movement extends JObject implements MovementInterface {
+
+    jclassName(): string {
+        return "org.allbinary.physics.movement.Movement";
+    }
+    
+
+    jinit_Movement_0(): Movement {
+        super.jinit_JObject_0();
+        return this;
+    }
+    
+
+    init(speedBasicDecimal: BasicDecimal | null, angle: i32, otherAngle: i32): void {
+    }
+    
+
+    process(layer: AllBinaryGameLayer | null): void {
+    }
+    
+
+    stop(): void {
+    }
+}
+

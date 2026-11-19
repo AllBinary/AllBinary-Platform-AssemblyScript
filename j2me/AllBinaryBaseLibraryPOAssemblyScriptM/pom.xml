@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMAssemblyScript</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMAssemblyScript</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryAssemblyScriptM</module>
+        <module>../TempBaseJavaLibraryAssemblyScriptM</module>
+        
+        <module>../../allbinary_src/LogAssemblyScriptM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcAssemblyScriptM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryAssemblyScriptM</module>
+
+        <module>../ExceptionHTMLJavaLibraryAssemblyScriptM</module>
+        <module>../J2MEExceptionLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryAssemblyScriptM</module>
+        <module>../J2MEUtilJavaLibraryAssemblyScriptM</module>
+        <module>../J2MEColorJavaLibraryAssemblyScriptM</module>
+        <module>../EventJ2MELibraryAssemblyScriptM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryAssemblyScriptM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryAssemblyScriptM</module>-->
+        <module>../logging/LoggingNoneAssemblyScriptM</module>
+        <module>../logging/LoggingJ2MEAllAssemblyScriptM</module>
+        <module>../logging/LoggingJ2MEExceptionAssemblyScriptM</module>
+        <!--<module>../logging/LoggingAndroidAllAssemblyScriptM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionAssemblyScriptM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryAssemblyScriptM</module>
+        
+        <module>../lib/BaseMathLibraryAssemblyScriptM</module>
+        <module>../lib/BasicMathLibraryAssemblyScriptM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/ThreadHTMLLibraryAssemblyScriptM</module>
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryAssemblyScriptM</module>
+        <module>../time/TimeJavaLibraryAssemblyScriptM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryAssemblyScriptM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryAssemblyScriptM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryAssemblyScriptM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryAssemblyScriptM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryAssemblyScriptM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOAssemblyScriptM</module>
+
+        <module>../lib/TrigBaseLibraryAssemblyScriptM</module>
+
+    </modules>
+
+</project>
+

@@ -1,0 +1,32 @@
+/*
+ * 
+ * AllBinary Open License Version 1 
+ * Copyright (c) 2025 AllBinary 
+ *  
+ * By agreeing to this license you and any business entity you represent are 
+ * legally bound to the AllBinary Open License Version 1 legal agreement. 
+ *  
+ * You may obtain the AllBinary Open License Version 1 legal agreement from 
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+ *  
+ * Created By: Travis Berthelot 
+ *   
+ */
+// Generated Code Do Not Modify
+// package org.allbinary.game.input
+
+@global export interface KeyInterface {
+    
+
+    keyPressed(keyCode: i32): void;
+    
+
+    keyReleased(keyCode: i32): void;
+    
+
+    keyPressedByDevice(keyCode: i32, deviceId: i32): void;
+    
+
+    keyReleasedByDevice(keyCode: i32, deviceId: i32): void;
+}
+

@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPAssemblyScript</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPAssemblyScript</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryAssemblyScriptP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <!--<module>../licensing/TestServiceClientInfoJavaLibraryAssemblyScriptM</module>-->        
+
+        <module>../data/DataTableInterfacesAssemblyScriptM</module>
+        
+        <!--<module>../QueueJavaLibraryAssemblyScriptM</module>-->
+        
+        <!--
+        <module>../TokenizerJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryAssemblyScriptM</module>
+
+        <module>../JavaUtilLibraryAssemblyScriptM</module>
+        <module>../NullInitInfoJavaLibraryAssemblyScriptM</module>        
+        <module>../InitInfoJavaLibraryAssemblyScriptM</module>
+        <!--<module>../PreLoaderHttpJavaLibraryAssemblyScriptM</module>-->
+        
+        <!--<module>../TagsBaseJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../CustomLoaderJavaLibraryAssemblyScriptM</module>-->
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryAssemblyScriptM</module>
+        <module>../logic/data/file/FileJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <!--<module>../data/SQLAllBinaryJavaLibraryAssemblyScriptM</module>-->
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryAssemblyScriptM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryAssemblyScriptM</module>
+
+        <!--<module>../VisualStyleJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../ConfigurationJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../VisualTransformBaseJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../CategoryBaseJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../CategoryJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../UserJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../PaymentGatewayBaseJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../data/vo/EntitiesBlisketVOJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../PaymentGatewayJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/vo/EntitiesOrderHistoryVOJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/vo/EntityPaymentGatewayVOJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/vo/EntityStoreFrontVOJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../data/EntitiesBlisketBaseInterfacesJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntitiesBlisketBaseJavaLibraryAssemblyScriptM</module>-->
+        
+        <!--<module>../data/EntitiesAdvertisementBaseJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntityOrderHistoryJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntityPaymentGatewayJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntityVisualTransformJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntityUserJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../data/EntityWorkflowJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../SMTPConfigurationJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../SMTPBaseJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../VisualTransformJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../GatewayJavaLibraryAssemblyScriptM</module>-->
+        
+        <!--<module>../WorkflowBaseJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../WorkflowJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../IdGeneratorUsingFilesJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../BlisketPreVOJavaLibraryAssemblyScriptM</module>-->
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <!--<module>../BlisketVOJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../UserCommerceJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../CustomizerValidatorsJavaLibraryAssemblyScriptM</module>-->
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <!--<module>../logic/data/file/FileMediaJ2SEJavaLibraryAssemblyScriptM</module>-->
+        <!--<module>../BlisketBaseJavaLibraryAssemblyScriptM</module>-->
+
+        <!--<module>../logging/LoggingGAEAllAssemblyScriptM</module>-->
+        <!--<module>../BlisketJavaLibraryAssemblyScriptM</module>-->
+        
+    </modules>
+
+</project>
+

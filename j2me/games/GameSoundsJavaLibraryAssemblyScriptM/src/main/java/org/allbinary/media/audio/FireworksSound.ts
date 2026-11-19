@@ -1,0 +1,49 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// package org.allbinary.media.audio
+
+//Use 8hz16bitmono for most J2ME
+@global export class FireworksSound extends CompositeSound {
+
+    jclassName(): string {
+        return "org.allbinary.media.audio.FireworksSound";
+    }
+    @lazy static jv_soundInterface: Sound | null = null;
+    @lazy static js_soundInterface: bool = false;
+    static get soundInterface(): Sound | null {
+        if (!FireworksSound.js_soundInterface) {
+            FireworksSound.js_soundInterface = true;
+            FireworksSound.jv_soundInterface = new FireworksSound().jinit_FireworksSound_0();
+        }
+        return FireworksSound.jv_soundInterface;
+    }
+    static set soundInterface(value: Sound | null) {
+        FireworksSound.js_soundInterface = true;
+        FireworksSound.jv_soundInterface = value;
+    }
+    
+
+    jinit_FireworksSound_0(): FireworksSound {
+        super.jinit_CompositeSound_1("resource:/wav/fireworks.wav");
+        return this;
+    }
+    
+
+    static getInstance(): Sound | null {
+        return FireworksSound.soundInterface;
+    }
+}
+

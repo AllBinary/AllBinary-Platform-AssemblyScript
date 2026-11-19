@@ -1,0 +1,37 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// package org.allbinary.logic.system.os.windows
+// import org.allbinary.logic.system.os.GenericOperatingSystem
+
+@global export class WindowsOS extends GenericOperatingSystem {
+
+    jclassName(): string {
+        return "org.allbinary.logic.system.os.windows.WindowsOS";
+    }
+    
+
+    jinit_WindowsOS_0(): WindowsOS {
+        super.jinit_GenericOperatingSystem_0();
+        this.scalable = true;
+        return this;
+    }
+    
+
+    isAutoHide(): bool {
+        return true;
+    }
+}
+
