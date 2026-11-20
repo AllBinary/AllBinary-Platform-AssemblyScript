@@ -180,12 +180,12 @@
     }
     
 
-    compareTo(cpuInterface: CpuInterface | null): bool {
+    compareTo_1_CpuInterface(cpuInterface: CpuInterface | null): bool {
         return true;
     }
     
 
-    compareTo(componentInterface: HardwareComponentInterface | null): bool {
+    compareTo_1_HardwareComponentInterface(componentInterface: HardwareComponentInterface | null): bool {
         return true;
     }
     

@@ -51,5 +51,9 @@
         let isFileAcceptable: bool = (changetype<JBoolean | null>(this.booleanVisitorInterface!.visit(file)))!.booleanValue(); if (JThrowable.pending !== null) return false;
         return isFileAcceptable || file!.isDirectory();
     }
+
+    accept(file: JFile | null): bool {
+        return this.accept_1_File(file);
+    }
 }
 

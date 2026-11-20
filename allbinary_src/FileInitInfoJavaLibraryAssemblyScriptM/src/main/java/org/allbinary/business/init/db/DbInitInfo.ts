@@ -88,13 +88,13 @@
             newFile!.createNewFile(); if (JThrowable.pending !== null) break;
             let dataOutputStream: AbDataOutputStream | null = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile); if (JThrowable.pending !== null) break;
             do {
-                let cryptedJdbcDriver: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(1)!.encrypt(this.getJdbcDriver())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedName: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(2)!.encrypt(this.getName())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedUserName: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(3)!.encrypt(this.getUserName())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedPassword: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(4)!.encrypt(this.getPassword())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedSchema: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(5)!.encrypt(this.getSchema())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedServer: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(6)!.encrypt(this.getServer())!.getBytes0(); if (JThrowable.pending !== null) break;
-                let cryptedPort: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(7)!.encrypt(this.getPort())!.getBytes0(); if (JThrowable.pending !== null) break;
+                let cryptedJdbcDriver: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(1)!.encrypt(this.getJdbcDriver())); if (JThrowable.pending !== null) break;
+                let cryptedName: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(2)!.encrypt(this.getName())); if (JThrowable.pending !== null) break;
+                let cryptedUserName: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(3)!.encrypt(this.getUserName())); if (JThrowable.pending !== null) break;
+                let cryptedPassword: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(4)!.encrypt(this.getPassword())); if (JThrowable.pending !== null) break;
+                let cryptedSchema: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(5)!.encrypt(this.getSchema())); if (JThrowable.pending !== null) break;
+                let cryptedServer: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(6)!.encrypt(this.getServer())); if (JThrowable.pending !== null) break;
+                let cryptedPort: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(7)!.encrypt(this.getPort())); if (JThrowable.pending !== null) break;
                 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver)); if (JThrowable.pending !== null) break;
                 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedName)); if (JThrowable.pending !== null) break;
                 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName)); if (JThrowable.pending !== null) break;

@@ -108,8 +108,8 @@
             let newFile: AbFile | null = AbFile.createAbFileFromAbPath(FILEABPATH); if (JThrowable.pending !== null) break;
             newFile!.createNewFile(); if (JThrowable.pending !== null) break;
             let dataOutputStream: AbDataOutputStream | null = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile); if (JThrowable.pending !== null) break;
-            let cryptedUserName: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(1)!.encrypt(this.getUserName())!.getBytes0(); if (JThrowable.pending !== null) break;
-            let cryptedPassword: StaticArray<i8> | null = new WeakCrypt().jinit_WeakCrypt_1(2)!.encrypt(this.getPassword())!.getBytes0(); if (JThrowable.pending !== null) break;
+            let cryptedUserName: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(1)!.encrypt(this.getUserName())); if (JThrowable.pending !== null) break;
+            let cryptedPassword: StaticArray<i8> | null = JString.getBytes0(new WeakCrypt().jinit_WeakCrypt_1(2)!.encrypt(this.getPassword())); if (JThrowable.pending !== null) break;
             dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName)); if (JThrowable.pending !== null) break;
             dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword)); if (JThrowable.pending !== null) break;
             InstallerInfo.hasRead = false;
