@@ -47,7 +47,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         return this.nullUtil!.NULL_OBJECT;
     }
     

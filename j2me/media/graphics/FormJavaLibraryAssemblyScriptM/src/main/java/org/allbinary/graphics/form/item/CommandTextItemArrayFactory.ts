@@ -62,7 +62,7 @@
         for (let index: i32 = 0; index < size; index++) {
             command = changetype<Command | null>(vectorUtil!.elementAt(vector, index)); if (JThrowable.pending !== null) return null;
             if (command!.getPriority() < priorityLimit) {
-                let aBoolean: JBoolean | null = changetype<JBoolean | null>(this.visitorInterface!.visit(command)); if (JThrowable.pending !== null) return null;
+                let aBoolean: JBoolean | null = changetype<JBoolean | null>(this.visitorInterface!.visit_1_Object(command)); if (JThrowable.pending !== null) return null;
                 if (aBoolean!.booleanValue()) {
                     textItem = new CommandTextItem().jinit_CommandTextItem_5(command, LcduiImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor); if (JThrowable.pending !== null) return null;
                     this.list!.add(textItem); if (JThrowable.pending !== null) return null;

@@ -30,7 +30,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         return changetype<Object | null>(this.visit_1_AbFile(changetype<AbFile | null>(anyType)));
     }
     

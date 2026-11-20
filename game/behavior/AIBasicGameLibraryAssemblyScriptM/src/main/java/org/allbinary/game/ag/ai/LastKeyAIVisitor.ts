@@ -41,7 +41,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         do {
             let basicAI: BasicAI | null = changetype<BasicAI | null>(anyType);
             let key: i32 = basicAI!.getLastKey(); if (JThrowable.pending !== null) break;

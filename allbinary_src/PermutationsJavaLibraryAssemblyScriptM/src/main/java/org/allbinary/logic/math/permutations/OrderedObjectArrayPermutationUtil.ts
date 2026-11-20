@@ -103,7 +103,7 @@
         JSystem.println(jstr(iterations)); if (JThrowable.pending !== null) return;
         for (let count: i64 = (<i64>0); count < iterations - (<i64>1); count++) {
             this.getNext(data); if (JThrowable.pending !== null) return;
-            visitor!.visit(this); if (JThrowable.pending !== null) return;
+            visitor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
         } if (JThrowable.pending !== null) return;
         JSystem.println(jstr(this.FINISHED)); if (JThrowable.pending !== null) return;
     }
@@ -119,7 +119,7 @@
         let permutationVisitor: ObjectPermutationVisitor | null = new ObjectPermutationVisitor().jinit_ObjectPermutationVisitor_1(data); if (JThrowable.pending !== null) return;
         let ORIGINAL_DATA_LABEL: string | null = "Original Data: ";
         JSystem.print(jstr(ORIGINAL_DATA_LABEL)); if (JThrowable.pending !== null) return;
-        permutationVisitor!.visit(data); if (JThrowable.pending !== null) return;
+        permutationVisitor!.visit_1_Object(data); if (JThrowable.pending !== null) return;
         OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisitor); if (JThrowable.pending !== null) return;
     }
 }

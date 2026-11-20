@@ -101,7 +101,7 @@
         JSystem.println(jstr(iterations)); if (JThrowable.pending !== null) return;
         for (let count: i64 = (<i64>0); count < iterations - (<i64>1); count++) {
             this.getNext(data); if (JThrowable.pending !== null) return;
-            visitor!.visit(this); if (JThrowable.pending !== null) return;
+            visitor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
         } if (JThrowable.pending !== null) return;
         JSystem.println(jstr(this.FINISHED)); if (JThrowable.pending !== null) return;
     }

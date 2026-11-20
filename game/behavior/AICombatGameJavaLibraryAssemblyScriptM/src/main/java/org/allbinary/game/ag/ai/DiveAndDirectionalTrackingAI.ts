@@ -209,34 +209,34 @@
     moveRight(): void {
         this.setLastDirection(this.directionFactory!.RIGHT); if (JThrowable.pending !== null) return;
         this.directionalInterface!.setFrameByDirection(this.lastDirection); if (JThrowable.pending !== null) return;
-        this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+        this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
     }
     
 
     moveLeft(): void {
         this.setLastDirection(this.directionFactory!.LEFT); if (JThrowable.pending !== null) return;
         this.directionalInterface!.setFrameByDirection(this.lastDirection); if (JThrowable.pending !== null) return;
-        this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+        this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
     }
     
 
     moveDown(): void {
         this.setLastDirection(this.directionFactory!.DOWN); if (JThrowable.pending !== null) return;
         this.directionalInterface!.setFrameByDirection(this.lastDirection); if (JThrowable.pending !== null) return;
-        this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+        this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
     }
     
 
     moveUp(): void {
         this.setLastDirection(this.directionFactory!.UP); if (JThrowable.pending !== null) return;
         this.directionalInterface!.setFrameByDirection(this.lastDirection); if (JThrowable.pending !== null) return;
-        this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+        this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
     }
     
 
     dive(): void {
         this.directionalInterface!.setFrameByDirection(this.directionOfTarget); if (JThrowable.pending !== null) return;
-        this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+        this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
     }
     
 
@@ -248,7 +248,7 @@
     drop(): void {
         if (this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime)) {
             this.initialDropped = true;
-            this.aiVistor!.visit(this); if (JThrowable.pending !== null) return;
+            this.aiVistor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
         } if (JThrowable.pending !== null) return;
     }
     

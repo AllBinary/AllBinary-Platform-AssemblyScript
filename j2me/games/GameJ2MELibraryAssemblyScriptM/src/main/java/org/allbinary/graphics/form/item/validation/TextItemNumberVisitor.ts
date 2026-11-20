@@ -40,7 +40,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         let value: string | null = changetype<string | null>(anyType);
         if (JString.length0(value) < 2) {
             let stringValidationUtil: StringValidationUtil | null = StringValidationUtil.getInstance(); if (JThrowable.pending !== null) return null;

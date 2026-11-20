@@ -34,7 +34,7 @@
     
 
     visitBool(visitorInterface: Visitor | null): bool {
-        let result: JBoolean | null = changetype<JBoolean | null>(visitorInterface!.visit(this.nullUtil!.NULL_OBJECT)); if (JThrowable.pending !== null) return false;
+        let result: JBoolean | null = changetype<JBoolean | null>(visitorInterface!.visit_1_Object(this.nullUtil!.NULL_OBJECT)); if (JThrowable.pending !== null) return false;
         let result2: bool = result!.booleanValue(); if (JThrowable.pending !== null) return false;
         return result2;
     }

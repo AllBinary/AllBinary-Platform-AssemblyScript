@@ -42,6 +42,6 @@
     getCacheSize(): string | null;
     
 
-    compareTo(cpuInterface: CpuInterface | null): bool;
+    compareTo_1_CpuInterface(cpuInterface: CpuInterface | null): bool;
 }
 

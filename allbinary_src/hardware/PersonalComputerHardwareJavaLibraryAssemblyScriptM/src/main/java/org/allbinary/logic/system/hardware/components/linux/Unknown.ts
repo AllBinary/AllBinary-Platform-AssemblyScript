@@ -37,7 +37,7 @@
     }
     
 
-    compareTo(componentInterface: HardwareComponentInterface | null): bool {
+    compareTo_1_HardwareComponentInterface(componentInterface: HardwareComponentInterface | null): bool {
         return true;
     }
     

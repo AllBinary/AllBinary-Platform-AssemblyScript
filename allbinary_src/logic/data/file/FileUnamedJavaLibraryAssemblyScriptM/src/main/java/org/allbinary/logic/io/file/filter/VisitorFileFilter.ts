@@ -42,13 +42,13 @@
 
     accept_1_File(file: JFile | null): bool {
         let abFile: AbFile | null = FileWrapperUtil.wrapFile(file); if (JThrowable.pending !== null) return false;
-        let isFileAcceptable: bool = (changetype<JBoolean | null>(this.booleanVisitorInterface!.visit(abFile)))!.booleanValue(); if (JThrowable.pending !== null) return false;
+        let isFileAcceptable: bool = (changetype<JBoolean | null>(this.booleanVisitorInterface!.visit_1_Object(abFile)))!.booleanValue(); if (JThrowable.pending !== null) return false;
         return isFileAcceptable || file!.isDirectory();
     }
     
 
     accept_1_AbFile(file: AbFile | null): bool {
-        let isFileAcceptable: bool = (changetype<JBoolean | null>(this.booleanVisitorInterface!.visit(file)))!.booleanValue(); if (JThrowable.pending !== null) return false;
+        let isFileAcceptable: bool = (changetype<JBoolean | null>(this.booleanVisitorInterface!.visit_1_Object(file)))!.booleanValue(); if (JThrowable.pending !== null) return false;
         return isFileAcceptable || file!.isDirectory();
     }
 

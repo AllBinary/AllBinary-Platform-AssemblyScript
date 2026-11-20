@@ -42,7 +42,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         do {
             let basicAI: BasicAI | null = changetype<BasicAI | null>(anyType);
             basicAI!.processKeyAI(Canvas.UP); if (JThrowable.pending !== null) break;

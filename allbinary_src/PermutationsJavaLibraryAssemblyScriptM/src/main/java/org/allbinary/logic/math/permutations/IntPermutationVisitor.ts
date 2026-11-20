@@ -27,7 +27,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         this.stringBuilder!.delete_(0, this.stringBuilder!.length()); if (JThrowable.pending !== null) return null;
         this.print_2(this.data, this.stringBuilder); if (JThrowable.pending !== null) return null;
         return NullUtil.getInstance()!.NULL_OBJECT;

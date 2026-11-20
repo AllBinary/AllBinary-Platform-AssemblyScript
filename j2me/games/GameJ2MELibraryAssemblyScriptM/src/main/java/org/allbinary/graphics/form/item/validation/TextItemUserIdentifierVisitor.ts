@@ -40,7 +40,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         let value: string | null = changetype<string | null>(anyType);
         if (JString.length0(value) < 2) {
             let charValue: u16 = JString.charAt1(value, 0); if (JThrowable.pending !== null) return null;

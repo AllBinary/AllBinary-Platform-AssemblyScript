@@ -77,7 +77,7 @@
                     } if (JThrowable.pending !== null) return;
                 } if (JThrowable.pending !== null) return;
             } if (JThrowable.pending !== null) return;
-            this.visitor!.visit(this); if (JThrowable.pending !== null) return;
+            this.visitor!.visit_1_Object(this); if (JThrowable.pending !== null) return;
         } if (JThrowable.pending !== null) return;
     }
 }

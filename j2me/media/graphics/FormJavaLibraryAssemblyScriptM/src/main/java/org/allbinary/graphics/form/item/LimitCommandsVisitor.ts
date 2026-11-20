@@ -42,7 +42,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         let command: Command | null = changetype<Command | null>(anyType);
         let booleanFactory: BooleanFactory | null = BooleanFactory.getInstance(); if (JThrowable.pending !== null) return null;
         if (this.isNotSmallDisplay || command!.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND) {

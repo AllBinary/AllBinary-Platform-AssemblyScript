@@ -30,7 +30,7 @@
     }
     
 
-    visit(anyType: Object | null): Object | null {
+    visit_1_Object(anyType: Object | null): Object | null {
         return BooleanFactory.getInstance()!.TRUE;
     }
 }
